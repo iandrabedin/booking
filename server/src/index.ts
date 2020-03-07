@@ -7,4 +7,4 @@ app.get("/", (req, res) => {
   return res.send("Hello world");
 });
 
-app.listen(PORT);
+app.listen(process.env.PORT || PORT);
